@@ -1,42 +1,10 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fadeIn');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const children = containerRef.current?.children;
-    if (children) {
-      Array.from(children).forEach((child) => {
-        observer.observe(child);
-        child.classList.add('opacity-0');
-      });
-    }
-
-    return () => {
-      if (children) {
-        Array.from(children).forEach((child) => {
-          observer.unobserve(child);
-        });
-      }
-    };
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       {/* Background gradient */}
@@ -50,7 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div ref={containerRef} className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fadeIn">
           <div className="inline-block mb-4">
             <span className="px-3 py-1 text-xs font-semibold tracking-wider text-grip-blue bg-grip-blue/10 rounded-full">
               SEBI REGULATED • SECURE • TRANSPARENT
@@ -58,7 +26,6 @@ const Hero = () => {
           </div>
 
           <h1 
-            ref={headingRef} 
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight text-balance"
           >
             <span className="text-gradient">Simplify</span> Your Investment Journey with Grip Invest
