@@ -1,39 +1,30 @@
-# Grip Invest Journey - Prototype
+# Grip Invest — Investment Experience Prototype
 
-## Overview
-This repository contains a prototype aimed at improving the investment experience on the Grip Invest platform. The focus areas include:
-- Enhancing risk transparency.
-- Providing personalized investment recommendations.
-- Simplifying return calculations.
-- Improving customer support options.
+A **UI/UX prototype** exploring a cleaner alternative-investments experience: clearer risk transparency, personalized recommendations, simpler return math, and in-app support. Built as an independent design/frontend exercise.
 
-## Features
-- **Risk Insights:** Clear and transparent risk disclosures.
-- **Personalized Recommendations:** Investment suggestions based on user preferences.
-- **Return Calculator:** A tool to estimate potential returns easily.
-- **Real-time Support:** Instant assistance via chatbot.
+> Independent prototype — not affiliated with or endorsed by any company. Built to explore the product experience.
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SNEHA-81/grip-invest-journey.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd grip-invest-journey
-   ```
-3. Run the project:
-   - For a web-based prototype, open `index.html` in a browser.
-   - For a Python-based app, install dependencies and run the script:
-     ```bash
-     pip install -r requirements.txt
-     python main.py
-     ```
+## What it explores
 
-## Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
+- **Risk insights** — transparent, plain-language risk disclosures
+- **Personalized recommendations** — investment suggestions by user preference
+- **Return calculator** — quick estimates of potential returns
+- **Investment journey** — a guided, step-by-step flow with progress indicators
+- **In-app support** — chat assistance surface
+
+## Tech stack
+
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
+
+## Run it
+
+```bash
+npm install
+npm run dev      # dev server
+npm run build    # production build
+```
 
 ## License
-This project is open-source under the MIT License.
 
-
+MIT
