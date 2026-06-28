@@ -1,4 +1,4 @@
-# Grip Invest — Investment Experience Prototype
+# Acme Invest — Investment Experience Prototype
 
 A **UI/UX prototype** exploring a cleaner alternative-investments experience: clearer risk transparency, personalized recommendations, simpler return math, and in-app support. Built as an independent design/frontend exercise.
 

@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-tight text-balance"
           >
-            <span className="text-gradient">Simplify</span> Your Investment Journey with Grip Invest
+            <span className="text-gradient">Simplify</span> Your Investment Journey with Acme Invest
           </h1>
 
           <p className="text-lg md:text-xl text-grip-neutral max-w-2xl mx-auto text-balance">

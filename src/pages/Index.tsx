@@ -263,8 +263,8 @@ const Index = () => {
                   <Mail className="h-5 w-5 text-grip-accent mr-3 mt-0.5" />
                   <div>
                     <div className="text-sm text-white/90">Email Us</div>
-                    <a href="mailto:support@gripinvest.com" className="text-sm text-white/70 hover:text-white">
-                      support@gripinvest.com
+                    <a href="mailto:support@example.com" className="text-sm text-white/70 hover:text-white">
+                      support@example.com
                     </a>
                   </div>
                 </li>
@@ -289,7 +289,7 @@ const Index = () => {
           
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} Grip Invest. All rights reserved.
+              © {new Date().getFullYear()} Acme Invest. All rights reserved.
             </p>
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
